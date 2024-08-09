@@ -41,17 +41,11 @@ public class Leetcode_3_Longest_Substring_Without_Repeating_Characters {
         int max = 0, i = 0, j = 0;
         while (j < s.length()) {
             if (!setChars.contains(s.charAt(j))) {
-                System.out.println("j= " +j);
-                System.out.println("char j add to set" +s.charAt(j));
                 setChars.add(s.charAt(j));
-                System.out.println("size setChars " +setChars.size());
                 max = Math.max(max, j - i + 1);
                 j++;
             } else {
-                System.out.println("i= " +i);
-                System.out.println("char i removed " +s.charAt(i));
                 setChars.remove(s.charAt(i));
-                System.out.println("size setChars " +setChars.size());
                 i++;
             }
         }
@@ -73,5 +67,6 @@ public class Leetcode_3_Longest_Substring_Without_Repeating_Characters {
         String s = "abcabcbb";
         Leetcode_3_Longest_Substring_Without_Repeating_Characters test = new Leetcode_3_Longest_Substring_Without_Repeating_Characters();;
         System.out.println(test.lengthOfLongestSubstring(s));
+        System.out.println(test.lengthOfLongestSubstringSolution2(s));
     }
 }

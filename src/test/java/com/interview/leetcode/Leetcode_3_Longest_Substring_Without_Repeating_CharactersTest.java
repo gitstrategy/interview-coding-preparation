@@ -34,4 +34,34 @@ class Leetcode_3_Longest_Substring_Without_Repeating_CharactersTest {
         //Then
         assertEquals(3, test.lengthOfLongestSubstring(data));
     }
+
+    @Test
+    void lengthOfLongestSubstringSolution2_testcase1() {
+        //Given
+        String data = "abcabcbb";
+        //When
+        Leetcode_3_Longest_Substring_Without_Repeating_Characters test = new Leetcode_3_Longest_Substring_Without_Repeating_Characters();
+        //Then
+        assertEquals(3, test.lengthOfLongestSubstringSolution2(data));
+    }
+
+    @Test
+    void lengthOfLongestSubstringSolution2_testcase2() {
+        //Given
+        String data = "bbbbb";
+        //When
+        Leetcode_3_Longest_Substring_Without_Repeating_Characters test = new Leetcode_3_Longest_Substring_Without_Repeating_Characters();
+        //Then
+        assertEquals(1, test.lengthOfLongestSubstringSolution2(data));
+    }
+
+    @Test
+    void lengthOfLongestSubstringSolution2_testcase3() {
+        //Given
+        String data = "pwwkew";
+        //When
+        Leetcode_3_Longest_Substring_Without_Repeating_Characters test = new Leetcode_3_Longest_Substring_Without_Repeating_Characters();
+        //Then
+        assertEquals(3, test.lengthOfLongestSubstringSolution2(data));
+    }
 }
