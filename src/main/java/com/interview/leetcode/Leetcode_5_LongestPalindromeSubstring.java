@@ -112,7 +112,12 @@ public class Leetcode_5_LongestPalindromeSubstring {
     }
 
     public static void main(String[] args) {
-        String s = "babad";
+        //String s = "babad";
+        String s = "cbbd";
+        Leetcode_5_LongestPalindromeSubstring test = new Leetcode_5_LongestPalindromeSubstring();
         System.out.println("Longest Palindromic Substring: " + longestPalindromeSolution1(s));
+        System.out.println("Longest Palindromic Substring: " + test.longestPalindromeSolution2(s));
+        System.out.println("Longest Palindromic Substring: " + test.longestPalindrome(s));
+
     }
 }

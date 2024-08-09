@@ -1,0 +1,29 @@
+package com.interview.leetcode;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class Leetcode_4_Median_of_Two_Sorted_ArraysTest {
+
+    @Test
+    void findMedianSortedArrays_testcase1() {
+        //given
+        int[] nums1 = {1, 3};
+        int[] nums2 = {2};
+        //when
+        Leetcode_4_Median_of_Two_Sorted_Arrays test = new Leetcode_4_Median_of_Two_Sorted_Arrays();
+        //then
+        assertEquals(2.0, test.findMedianSortedArrays(nums1, nums2));
+    }
+    @Test
+    void findMedianSortedArrays_testcase2() {
+        //given
+        int[] nums1 = {1, 2};
+        int[] nums2 = {3,4};
+        //when
+        Leetcode_4_Median_of_Two_Sorted_Arrays test = new Leetcode_4_Median_of_Two_Sorted_Arrays();
+        //then
+        assertEquals(2.5, test.findMedianSortedArrays(nums1, nums2));
+    }
+}
