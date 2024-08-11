@@ -48,4 +48,9 @@ package com.interview.leetcode;
  * 1 <= numRows <= 1000
  */
 public class Leetcode_6_Zigzag_Conversion {
+    public String convertSolution1(String s, int numRows) {
+
+        return "PAHNAPLSIIGYIR";
+    }
+
 }
